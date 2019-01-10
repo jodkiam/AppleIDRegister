@@ -463,7 +463,7 @@ if __name__ == '__main__':
     # print(gen_one_word_digit(lowercase=False))
 
     print(gen_birthday(westenstyle=False)+gen_year(1988, 1992))
-    print(fake.first_name_male()+'@org0.com')
+    print(fake.first_name_male()+gen_year(1988, 1992)+'@org0.com')
     print('密码：'+'Aa201901')
 
     print('\n问题1:\n'+Security_Question_One[random.randint(0,4)]+'\n'+fake.first_name_male());
@@ -471,6 +471,15 @@ if __name__ == '__main__':
     print('\n问题3:\n'+Security_Question_Three[random.randint(0,4)]+'\n'+fake.first_name_male());
 
 
+    print()
+    print("Address infomation:")
+    print(fake.address())
+    print()
+
+    print(fake.city_suffix())
+    print()
+
+    print(fake.phone_number())
     # # print(gen_birthday(westenstyle=True))
     #
     # print(gen_two_words(split='', lowercase=True) + gen_year(1988, 2015))
